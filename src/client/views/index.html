@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+    <!-- <script type="text/js" src="../../../dist/main.js"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+        <h1 id="title">Natural Language Processing</h1>
+        
+        <div id="form" onsubmit="Client.submitListener(event)">
+            <form method="POST">
+                <label for="url">Enter URL:</label>
+                <input type="text" id="url" name="url" style="width: 75vw;"><br>
+                
+                <button id="submit" type="submit" onclick="Client.submitListener(event)" onsubmit="Client.submitListener(event)">Submit</button>
+            </form>
+        </div>
+        <div id="results">
+            <h2 id="results_title">Results</h2>
+            <div id="results_return_titles">
+                <div>Agreement: </div>
+                <div>Confidence: </div>
+                <div>Irony: </div>
+                <div>Score Tag: </div>
+            </div>
+            <div id="results_return">
+                <div id="agreement"> </div>
+                <div id="confidence"> </div>
+                <div id="irony"> </div>
+                <div id="score"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script defer src="myapp.js"></script> -->
+</body>
+</html>
+<!-- npm i -D @babel/core@^7.5.4 @babel/preset-env@^7.5.4 babel-loader@^8.0.6 -->

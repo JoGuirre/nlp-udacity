@@ -1,0 +1,42 @@
+* {
+    /* border: 2px solid red; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: coral;
+}
+
+#wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 1px solid blue; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    align-self: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#results {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 5%;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
